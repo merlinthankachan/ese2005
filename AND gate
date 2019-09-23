@@ -1,0 +1,34 @@
+// VHDL Code for AND gate//
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+entity AND_gate is
+port(A,B: IN BIT; X: OUT BIT);
+end entity AND_gate;
+ARCHITECTURE EXP of AND_gate is
+begin
+X <=A AND B;
+end ARCHITECTURE EXP;
+entity NOT_gate is
+port(A:IN BIT; X:OUT BIT);
+end entity NOT_gate;
+ARCHITECTURE EXP0 of NOT_gate is
+begin
+X<= NOT A;
+end ARCHITECTURE EXP0;
+entity TUESDAY is
+port(IN1,IN2,IN3: IN BIT; F,G: OUT BIT);
+end entity TUESDAY;
+ARCHITECTURE EXP1 of TUESDAY is
+component AND_gate is
+port(A,B: IN BIT; X: OUT BIT);
+end component AND_gate;
+component NOT_gate is
+port(A:IN BIT; X: OUT BIT);
+end component NOT_gate;
+signal out1:bit;
+begin
+G1:NOT_gate port map (A=>IN2,X=>G);
+G2:NOT_gate port map (A=>IN3,X=>out1);
+G3:AND_gate port map (A=>IN2,B=>out1,X=>F);
+end ARCHITECTURE EXP1;
