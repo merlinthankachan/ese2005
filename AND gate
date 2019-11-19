@@ -1,7 +1,7 @@
 // VHDL Code for AND gate//
 ****************************
 
-LIBRARY ieee;
+LIBRARY ieee
 USE ieee.std_logic_1164.ALL;
 entity AND_gate is
 port(A,B: IN BIT; X: OUT BIT);
