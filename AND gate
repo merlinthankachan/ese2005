@@ -32,4 +32,4 @@ begin
 G1:NOT_gate port map (A=>IN2,X=>G);
 G2:NOT_gate port map (A=>IN3,X=>out1);
 G3:AND_gate port map (A=>IN2,B=>out1,X=>F);
-end ARCHITECTURE EXP
+end ARCHITECTURE EXP;
