@@ -12,7 +12,7 @@ while (1+epsmach > 1)
 }
 epsmach= epsmach*2;
 cout << "The amount of round off error is " << epsmach << endl;
-
+}
 
 
 
