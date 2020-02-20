@@ -1,5 +1,5 @@
 // A C++ program  to calculate the amount of epsilon for Round-Off Error concept //
-***********************************************************************************
+************************************************************************************
 
 #include <iostream>
 using namespace std;
